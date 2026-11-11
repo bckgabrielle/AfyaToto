@@ -1,4 +1,4 @@
-import { useEffect, useState, lazy, Suspense } from 'react'
+import React, { useEffect, useState, lazy, Suspense } from 'react'
 import { api, asDateString, MOCK } from './api'
 import { tr as mk } from './content'
 import Mother from './Mother.jsx'
@@ -158,7 +158,7 @@ export default function App() {
   return (
     <div className="mshell"><div className="kanga" />
       <a className="skip-link" href="#main-content">{lang === 'sw' ? 'Ruka hadi maudhui' : 'Skip to content'}</a>
-      <header><b><svg viewBox="0 0 24 24" className="heart" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z" /></svg>Afya Toto</b>
+      <header className="brand-header"><div className="brand-lockup"><span className="brand-mark"><svg viewBox="0 0 24 24" className="heart" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z" /></svg></span><span className="wordmark"><b>Afya Toto</b><small>{lang === 'sw' ? 'Afya ya mama na mtoto' : 'Mother & child care'}</small></span></div>
         <span><button className="ghost" onClick={() => pickLanguage(lang === 'en' ? 'sw' : 'en')}>{lang === 'en' ? 'Kiswahili' : 'English'}</button>
           {session && <button className="ghost" onClick={logout}>{tr('logout')}</button>}</span></header>
       {!online && <div className="alert" role="status">{lang === 'sw' ? 'Hakuna mtandao. Taarifa zinaweza kuwa za zamani; mabadiliko mapya hayatahifadhiwa.' : 'Offline. Information may be out of date; new activity will not be saved.'}</div>}

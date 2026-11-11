@@ -1,0 +1,8 @@
+{
+  "name": "Afya Toto",
+  "short_name": "Afya Toto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f6f7",
+  "theme_color": "#c43f64"
+}
