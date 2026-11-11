@@ -9,6 +9,7 @@ export const T = {
 }
 const JOURNEY = {
   en: {
+    first1000Scope: 'Pregnancy · postnatal care · infant feeding · growth · development · immunisation',
     ofPregnancyWeeks: 'of 40 pregnancy weeks',
     first1000: 'YOUR FIRST 1,000 DAYS',
     pregnancyStage: 'Pregnancy',
@@ -19,6 +20,7 @@ const JOURNEY = {
     motherBabyGuidance: 'MOTHER & BABY GUIDANCE',
   },
   sw: {
+    first1000Scope: 'Ujauzito · huduma baada ya kujifungua · lishe ya mtoto · ukuaji · maendeleo · chanjo',
     ofPregnancyWeeks: 'kati ya wiki 40 za ujauzito',
     first1000: 'SIKU 1,000 ZA KWANZA',
     pregnancyStage: 'Ujauzito',

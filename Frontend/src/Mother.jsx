@@ -46,7 +46,7 @@ function Home({ m, appointments, reminders, children, articles, tr }) {
       </section>
 
       <section className="journey-section" aria-labelledby="journey-title">
-        <div className="section-heading"><div><p className="eyebrow">{tr('first1000')}</p><h2 id="journey-title">{week ? `${tr('weekLabel')} ${week} · ${tr('pregnancyStage')}` : tr('journeyTitle')}</h2></div><span className="section-mark" aria-hidden="true">✿</span></div>
+        <div className="section-heading"><div><p className="eyebrow">{tr('first1000')}</p><h2 id="journey-title">{week ? `${tr('weekLabel')} ${week} · ${tr('pregnancyStage')}` : tr('journeyTitle')}</h2><p className="scope-line">{tr('first1000Scope')}</p></div><span className="section-mark" aria-hidden="true">✿</span></div>
         <div className="journey-cards">
           <article className="journey-row metric-visit"><span aria-hidden="true">◷</span><div><small>{tr('nextCare')}</small><b>{nextCare?.title || tr('noAppointments')}</b></div><strong>{nextCare ? fmt(nextCare.dueDate) : '—'}</strong></article>
           <article className="journey-row metric-child"><span aria-hidden="true">♡</span><div><small>{tr('childHealth')}</small><b>{children.length ? `${children.length} ${tr('childProfiles')}` : tr('noChildProfile')}</b>{nextVaccine && <em>{nextVaccine.title} · {fmt(nextVaccine.dueDate)}</em>}</div></article>
